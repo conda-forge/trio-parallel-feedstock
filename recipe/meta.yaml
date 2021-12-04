@@ -1,5 +1,5 @@
 {% set name = "trio-parallel" %}
-{% set version = "0.5.1" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 32fad6a7c9ba480f70d424772506fe4299c5dcc42c7628e6fd49df9cf6bd32e4
+  sha256: 7be741cf1ab925c97a5f6f334aee469c3e9c98124a0229b4ed2bfe8563940c13
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
