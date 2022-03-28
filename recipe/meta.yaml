@@ -16,11 +16,13 @@ build:
 
 requirements:
   host:
-    - python =>3.6
+    - python =>3.7
     - pip
   run:
-    - python =>3.6
+    - python =>3.7
     - trio >=0.18.0
+    - cffi
+    - attrs >=17.3.0
     - outcome
 
 test:
