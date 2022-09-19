@@ -21,9 +21,10 @@ requirements:
   run:
     - python =>3.7
     - trio >=0.18.0
-    - cffi
+    - cffi  # [win and python_impl != 'pypy']
     - attrs >=17.3.0
     - outcome
+    - tblib
 
 test:
   imports:
