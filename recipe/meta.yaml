@@ -1,5 +1,5 @@
 {% set name = "trio-parallel" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 472b92d547f43bf9095ee07003f19a52b39d5519a3ea1637d8ab8ed2fec596c5
+  sha256: 56a6fa38d449353a56ca6f47c65a60bce23ee1fd55b4488b04c36b4c6fe6ec3d
 
 build:
   number: 0
@@ -18,6 +18,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
   run:
     - python
     - trio >=0.18.0
