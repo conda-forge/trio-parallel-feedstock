@@ -26,6 +26,7 @@ requirements:
     - attrs >=17.3.0
     - outcome
     - tblib
+    - tricycle >=0.3.0
 
 test:
   imports:
